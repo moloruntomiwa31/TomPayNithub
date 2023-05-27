@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Poppins;
+}
+
+.container {
+    max-width: 100%;
+    background-color: rgb(231, 223, 223);
+    min-height: 100vh;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    background-color: blue;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+}
+@media screen and (max-width: 568px) {
+    nav {
+        margin-bottom: -10px;
+    }
+}
+h1 {
+    color: #fff;
+}
+nav .details {
+    justify-content: flex-end;
+    display: flex;
+}
+.wrapper-cover {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.wrapper {
+    background-color: #fff;
+    height: 50%;
+    min-width: 50%;
+    max-width: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 5px;
+}
+@media screen and (max-width: 568px) {
+    .wrapper {
+        min-width: 90%;
+    }
+}
+.wrapper .balance {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.properties {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.properties div {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.properties div:hover {
+    scale: 1.1;
+}
+.withdraw-popup, .transfer-popup, .exchange-popup {
+   display: flex;
+   justify-content: center;
+   margin: 20px;
+   max-width: 100%;
+   transition: all 0.5s ease-in-out;
+   visibility: hidden;
+}
+p {
+    padding: 2px 0;
+}
+fieldset {
+    border: none;
+    background-color: rgb(248, 241, 241);
+    padding: 10px;
+    border-radius: 7px;
+    max-width: 100%;
+}
+input {
+    outline: none;
+}
+input[type=number] {
+    border: none;
+    border-bottom: 1px solid black;
+    color: red;
+    background: none;
+    transition: all 0.5s ease-in;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn {
+    border: none;
+    background-color: blue;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.7;
+}
